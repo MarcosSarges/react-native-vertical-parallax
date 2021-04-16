@@ -12,7 +12,8 @@ import {
 const {width, height} = Dimensions.get('screen');
 const ITEM_WIDTH = width * 0.76;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.47;
-const inputRange = i => [(i - 1) * width, i * width, (i + 1) * width];
+const EXTRAPOLATE = 'clamp'
+const getInputRange = i => [(i - 1) * width, i * width, (i + 1) * width];
 
 const images = [
   'https://images.unsplash.com/photo-1551316679-9c6ae9dec224?w=800&q=80',
@@ -45,15 +46,15 @@ export default function App() {
       <View style={[StyleSheet.absoluteFillObject]}>
         {data.map((item, i) => {
           const opacity = scrollX.interpolate({
-            inputRange: inputRange(i),
+            inputRange: getInputRange(i),
             outputRange: [0.8, 1, 0.8],
-            extrapolate: 'clamp',
+            extrapolate: EXTRAPOLATE,
           });
 
           const translateY = scrollX.interpolate({
-            inputRange: inputRange(i),
+            inputRange: getInputRange(i),
             outputRange: [height, 0, -height],
-            extrapolate: 'clamp',
+            extrapolate: EXTRAPOLATE,
           });
 
           return (
@@ -87,9 +88,9 @@ export default function App() {
         }}
         renderItem={({item, index}) => {
           const size = scrollX.interpolate({
-            inputRange: inputRange(index),
+            inputRange: getInputRange(index),
             outputRange: [0.2, 1, 0.2],
-            extrapolate: 'clamp',
+            extrapolate: EXTRAPOLATE,
           });
           return (
             <View style={{width, alignItems: 'center'}}>
