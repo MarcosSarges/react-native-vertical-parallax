@@ -6,4 +6,4 @@
 
 ## Resultado
 
-![Scroll Horizontal Resposta Vertical]("https://github.com/MarcosSarges/react-native-vertical-parallax/blob/master/img/scroll.gif?raw=true")
+![Scroll Horizontal Resposta Vertical]("https://raw.githubusercontent.com/MarcosSarges/react-native-vertical-parallax/master/img/scroll.gif")
