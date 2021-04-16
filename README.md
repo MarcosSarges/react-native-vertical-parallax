@@ -5,4 +5,4 @@
 **Porem não alcancei o resultado esperado**
 
 ## Resultado
-![]("https://raw.githubusercontent.com/MarcosSarges/react-native-vertical-parallax/master/img/scroll.gif")
+![]("https://media4.giphy.com/media/RiEcIMMTPsREbejiT8/giphy.gif")
