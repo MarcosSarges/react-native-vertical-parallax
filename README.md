@@ -6,4 +6,4 @@
 
 ## Resultado
 
-![alt Scroll](https://media4.giphy.com/media/RiEcIMMTPsREbejiT8/giphy.gif)
+![alt Scroll](https://github.com/MarcosSarges/react-native-vertical-parallax/blob/master/img/scroll.gif?raw=true)
