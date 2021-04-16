@@ -12,7 +12,7 @@ import {
 const {width, height} = Dimensions.get('screen');
 const ITEM_WIDTH = width * 0.76;
 const ITEM_HEIGHT = ITEM_WIDTH * 1.47;
-const EXTRAPOLATE = 'clamp'
+const EXTRAPOLATE = 'clamp';
 const getInputRange = i => [(i - 1) * width, i * width, (i + 1) * width];
 
 const images = [
